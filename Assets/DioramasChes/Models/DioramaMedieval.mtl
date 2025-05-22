@@ -1,0 +1,25 @@
+# Blender 4.3.2 MTL File: 'DioramaMedieval.blend'
+# www.blender.org
+
+newmtl Metal
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/metal_plate_diff_4k.png
+map_Ns C:/metal_plate_rough_4k.png
+map_refl C:/metal_plate_metal_4k.png
+map_Bump -bm 1.000000 C:/metal_plate_nor_gl_4k.png
+
+newmtl Wood
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/aerial_wood_snips_diff_4k.png
+map_Ns C:/aerial_wood_snips_rough_4k.png
+map_Bump -bm 1.000000 C:/aerial_wood_snips_nor_gl_4k.png
