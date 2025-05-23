@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: panatanowater
-  m_Shader: {fileID: 4800000, guid: 5d43fb069f159fe478bb9a5fd53e8e68, type: 3}
+  m_Name: water2 2
+  m_Shader: {fileID: 4800000, guid: d70916b86e24f1747af9ed1af71be7d9, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -24,7 +24,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 84e0d42e5f7c04d4486510157d887daf, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -34,6 +34,6 @@ Material:
     - _WaveScale: 0.1
     - _WaveSpeed: 0.5
     m_Colors:
-    - _Color: {r: 0.0028924954, g: 0.6132076, b: 0.22526594, a: 1}
+    - _Color: {r: 0, g: 1, b: 0.532712, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
