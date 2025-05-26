@@ -23,7 +23,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_Shader1Marche
+  m_Name: Shader Graphs_Shader1Marche 11
   m_Shader: {fileID: -6465566751694194690, guid: 7fb0ed99d143e604d9e823c547320d94, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -103,12 +103,12 @@ Material:
     - _ZTestDepthEqualForOpaque: 3
     - _ZTestTransparent: 4
     - _ZWrite: 1
-    - _max: 1.52
-    - _min: -0.65
-    - _shades: 0.15
+    - _max: 1.31
+    - _min: -0.02
+    - _shades: 0.12
     m_Colors:
-    - _Color: {r: 0, g: 0, b: 0, a: 1}
-    - _Color_1: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.4056604, g: 0.26587203, b: 0, a: 1}
+    - _Color_1: {r: 0.3018868, g: 0.20947692, b: 0, a: 1}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
