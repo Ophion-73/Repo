@@ -68,7 +68,7 @@ Material:
     - _Float: 1
     - _Float_1: 1
     - _Float_2: 0.5
-    - _Float_3: 809.8
+    - _Float_3: 205.89
     - _MaterialID: 1
     - _MaterialTypeMask: 2
     - _OpaqueCullMode: 2
@@ -107,7 +107,7 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 0
     m_Colors:
-    - _Color: {r: 0.99056596, g: 0.9059396, b: 0, a: 1}
+    - _Color: {r: 0.43116885, g: 0.3943331, b: 0, a: 1}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
