@@ -5,21 +5,56 @@ public class RandomDiorama : MonoBehaviour
 {
     public List<GameObject> emptys = new List<GameObject>(); // son 84 emptys los que tiene que haber
 
+    private int[,] rangosOrdenados = new int[,]
+    {
+        { 0, 11 },   // Barrera
+        { 12, 23 },  // Angel
+        { 24, 35 },  // Cesar
+        { 36, 47 },  // Flan
+        { 48, 59 },  // Marche
+        { 60, 71 },  // Jorge
+        { 72, 83 }   // Juan
+    };
+
+    private int ultimoActivo = -1;
+
     public void RandomTodos()
     {
+        if (emptys.Count <= 1) return;
+
+        int nuevoEmpty;
+
+        do
+        {
+            nuevoEmpty = Random.Range(0, emptys.Count);
+        } while (nuevoEmpty == ultimoActivo);
+
         DesactivarEmptys();
-        int emptyRandom = Random.Range(0, emptys.Count);
-        emptys[emptyRandom].SetActive(true);
+        emptys[nuevoEmpty].SetActive(true);
+        ultimoActivo = nuevoEmpty;
     }
 
     public void RandomAlumno(int rangoAlumno)
     {
-        int inicio = rangoAlumno * 12;
-        int end = Mathf.Min(inicio + 12, emptys.Count);
+        if (rangoAlumno < 0 || rangoAlumno >= rangosOrdenados.GetLength(0))
+        {
+            Debug.Log("Fuera rango");
+            return;
+        }
+
+        int start = rangosOrdenados[rangoAlumno, 0];
+        int end = rangosOrdenados[rangoAlumno, 1] + 1;
+
+        int nuevoEmpty;
+
+        do
+        {
+            nuevoEmpty = Random.Range(start, end);
+        } while (nuevoEmpty == ultimoActivo);
 
         DesactivarEmptys();
-        int emptyRandom = Random.Range(inicio, end);
-        emptys[emptyRandom].SetActive(true);
+        emptys[nuevoEmpty].SetActive(true);
+        ultimoActivo = nuevoEmpty;
     }
 
     private void DesactivarEmptys()
