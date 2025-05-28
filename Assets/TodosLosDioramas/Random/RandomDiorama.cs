@@ -73,4 +73,11 @@ public class RandomDiorama : MonoBehaviour
     {
         card.GetComponent<MeshRenderer>().material.mainTexture = cardTex[index];
     }
+
+    public void SeleccionDeCarta(int index)
+    {
+        DesactivarEmptys();
+        emptys[index].SetActive(true);
+        card.GetComponent<MeshRenderer>().material.mainTexture = cardTex[index];
+    }
 }
