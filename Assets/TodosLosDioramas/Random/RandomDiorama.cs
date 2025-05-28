@@ -7,6 +7,8 @@ public class RandomDiorama : MonoBehaviour
     public GameObject card;
     public Texture2D[] cardTex;
 
+    public int indexSeleccionado;
+
     private int[,] rangosOrdenados = new int[,]
     {
         { 0, 11 },   // Barrera
@@ -79,5 +81,16 @@ public class RandomDiorama : MonoBehaviour
         DesactivarEmptys();
         emptys[index].SetActive(true);
         card.GetComponent<MeshRenderer>().material.mainTexture = cardTex[index];
+    }
+
+    public void ActivarSeleccionManual()
+    {
+        if (indexSeleccionado < 0 || indexSeleccionado >= emptys.Count)
+        {
+            Debug.LogWarning("Índice fuera de rango");
+            return;
+        }
+
+        SeleccionDeCarta(indexSeleccionado);
     }
 }
