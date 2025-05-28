@@ -4,6 +4,8 @@ using System.Collections.Generic;
 public class RandomDiorama : MonoBehaviour
 {
     public List<GameObject> emptys = new List<GameObject>(); // son 84 emptys los que tiene que haber
+    public GameObject card;
+    public Texture2D[] cardTex;
 
     private int[,] rangosOrdenados = new int[,]
     {
@@ -32,6 +34,7 @@ public class RandomDiorama : MonoBehaviour
         DesactivarEmptys();
         emptys[nuevoEmpty].SetActive(true);
         ultimoActivo = nuevoEmpty;
+        CambiarTextura(nuevoEmpty);
     }
 
     public void RandomAlumno(int rangoAlumno)
@@ -55,6 +58,7 @@ public class RandomDiorama : MonoBehaviour
         DesactivarEmptys();
         emptys[nuevoEmpty].SetActive(true);
         ultimoActivo = nuevoEmpty;
+        CambiarTextura(nuevoEmpty);
     }
 
     private void DesactivarEmptys()
@@ -63,5 +67,10 @@ public class RandomDiorama : MonoBehaviour
         {
             Emptys.SetActive(false);
         }
+    }
+
+    public void CambiarTextura(int index)
+    {
+        card.GetComponent<MeshRenderer>().material.mainTexture = cardTex[index];
     }
 }
